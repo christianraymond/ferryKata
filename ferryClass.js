@@ -4,6 +4,7 @@ module.exports = function() {
     this.passengers = passengers;
   }
 
+  this.onBoard = function(){
   var store = [];
   var countCars = Math.floor(Math.random() * 30) + 1;
   for (var x = 0; x <= countCars; x++) {
@@ -14,5 +15,6 @@ module.exports = function() {
   } else {
     console.log("Acepted!")
   }
+}
   return FerryClass;
 }

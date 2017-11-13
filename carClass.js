@@ -1,7 +1,9 @@
 //should specify the color and the number of passengers in the car
-var CarClass = function(color, passengers){
+module.exports = function(){
+var CarClass = function(color, passengers, regCar){
     this.color = color;
     this.passengers = passengers;
+    this.regCar = regCar;
   }
-var newCar = new CarClass('White', 10);
-console.log("There is a " + newCar.color + " car caring " + newCar.passengers + " passengers!");
+  return CarClass;
+}

@@ -19,7 +19,6 @@ module.exports = function() {
     }
     //check if the amount of cars ecceed certain amoun and display REJECTED&&Acepted.
     var store = [];
-    var AmountOfCars = Math.floor(Math.random() * 100) + 1;
     for (var x = 0; x <= AmountOfCars; x++) {
       var result = store.push(x)
     }
